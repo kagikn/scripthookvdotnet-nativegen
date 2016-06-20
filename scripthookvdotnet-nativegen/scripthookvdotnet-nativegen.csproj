@@ -7,8 +7,8 @@
     <ProjectGuid>{B3745775-5128-4AA0-BCB5-642DEED80491}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>scripthookvdotnet_nativegen</RootNamespace>
-    <AssemblyName>scripthookvdotnet-nativegen</AssemblyName>
+    <RootNamespace>NativeGen</RootNamespace>
+    <AssemblyName>NativeGen</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,10 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NativeTemplate.txt" />
+    <Content Include="NativeTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

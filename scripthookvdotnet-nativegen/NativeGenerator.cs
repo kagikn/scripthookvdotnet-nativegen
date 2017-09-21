@@ -42,7 +42,7 @@ namespace NativeGen
 					}
 				}
 
-				string outputFile = args.Length > 0 ? args[0] : "NativeHashes.hpp";
+				string outputFile = args.Length > 0 ? args[0] : "NativeHashes.cs";
 
 				File.WriteAllText(outputFile, string.Format(nativeTemplate, resultBuilder));
 
